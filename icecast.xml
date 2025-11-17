@@ -1,0 +1,41 @@
+<icecast>
+    <location>Chile</location>
+    <admin>admin@tudominio.com</admin>
+
+    <limits>
+        <clients>100</clients>
+        <sources>5</sources>
+        <queue-size>524288</queue-size>
+        <client-timeout>60</client-timeout>
+        <header-timeout>15</header-timeout>
+        <source-timeout>10</source-timeout>
+        <burst-on-connect>1</burst-on-connect>
+        <burst-size>65535</burst-size>
+    </limits>
+
+    <authentication>
+        <source-password>CHANGEME</source-password>
+        <relay-password>relay</relay-password>
+        <admin-user>admin</admin-user>
+        <admin-password>CHANGEME</admin-password>
+    </authentication>
+
+    <listen-socket>
+        <port>8000</port>
+    </listen-socket>
+
+    <fileserve>1</fileserve>
+
+    <mount>
+        <mount-name>/stream</mount-name>
+        <charset>UTF-8</charset>
+        <password>CHANGEME</password>
+    </mount>
+
+    <logging>
+        <accesslog>access.log</accesslog>
+        <errorlog>error.log</errorlog>
+        <loglevel>3</loglevel>
+        <logsize>10000</logsize>
+    </logging>
+</icecast>
